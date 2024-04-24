@@ -1,0 +1,110 @@
+/*
+ *
+ * INSTRUCTIONS
+ *
+ * Copy the Legal Disclaimer and the @font-faces statements to your regular CSS file.
+ * The font file(s) should be placed relative to the regular CSS file.
+ *
+ */
+
+/*
+ * Legal Disclaimer for Web licence
+ *
+ * Licence to use self-hosted webfonts for displaying dynamic text on specified website domains. Our package includes WOFF and WOFF2 font formats.
+ *
+ * Should the license page views limit be exceeded the license holder will be required to contact Lineto.com for an upgrade.
+ * 
+ * It is strictly prohibited to rename the font and to download or use these fonts in any other media. 
+ * 
+ * These Web fonts are licensed exclusively for the use on the following domain(s) and their subdomains:
+ *
+ * www.facenord.cc (monthly pageviews: <50K)
+ *
+ */
+
+/* complete */
+
+@font-face {
+  font-family: "AkkuratMonoLLWeb-Regular";
+  src: url("AkkuratMonoLLWeb-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AkkuratMonoLLWeb-Regular";
+  src: url("AkkuratMonoLLWeb-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "AkkuratMonoLLWeb-Italic";
+  src: url("AkkuratMonoLLWeb-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AkkuratMonoLLWeb-Italic";
+  src: url("AkkuratMonoLLWeb-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "AkkuratMonoLLWeb-BoldItalic";
+  src: url("AkkuratMonoLLWeb-BoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AkkuratMonoLLWeb-BoldItalic";
+  src: url("AkkuratMonoLLWeb-BoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "AkkuratMonoLLWeb-Bold";
+  src: url("AkkuratMonoLLWeb-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AkkuratMonoLLWeb-Bold";
+  src: url("AkkuratMonoLLWeb-Bold.woff2") format("woff2");
+}
+
+
+/* subset */
+
+@font-face {
+  font-family: "AkkuratMonoLLSub-Regular";
+  src: url("AkkuratMonoLLSub-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AkkuratMonoLLSub-Regular";
+  src: url("AkkuratMonoLLSub-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "AkkuratMonoLLSub-Italic";
+  src: url("AkkuratMonoLLSub-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AkkuratMonoLLSub-Italic";
+  src: url("AkkuratMonoLLSub-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "AkkuratMonoLLSub-BoldItalic";
+  src: url("AkkuratMonoLLSub-BoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AkkuratMonoLLSub-BoldItalic";
+  src: url("AkkuratMonoLLSub-BoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "AkkuratMonoLLSub-Bold";
+  src: url("AkkuratMonoLLSub-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AkkuratMonoLLSub-Bold";
+  src: url("AkkuratMonoLLSub-Bold.woff2") format("woff2");
+}
+
+
