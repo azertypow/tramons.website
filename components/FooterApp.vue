@@ -1,24 +1,17 @@
 <template>
     <footer class="v-footer-app" >
-
         <div
             class="v-footer-app__adresse"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg" width="17.322" height="23.096" viewBox="0 0 17.322 23.096">
-                <path id="Icon_awesome-map-marker-alt" data-name="Icon awesome-map-marker-alt" d="M7.771,22.63C1.217,13.128,0,12.153,0,8.661a8.661,8.661,0,0,1,17.322,0c0,3.492-1.217,4.467-7.771,13.969a1.083,1.083,0,0,1-1.78,0Zm.89-10.36A3.609,3.609,0,1,0,5.052,8.661,3.609,3.609,0,0,0,8.661,12.27Z"/>
+                <path fill="white" id="Icon_awesome-map-marker-alt" data-name="Icon awesome-map-marker-alt" d="M7.771,22.63C1.217,13.128,0,12.153,0,8.661a8.661,8.661,0,0,1,17.322,0c0,3.492-1.217,4.467-7.771,13.969a1.083,1.083,0,0,1-1.78,0Zm.89-10.36A3.609,3.609,0,1,0,5.052,8.661,3.609,3.609,0,0,0,8.661,12.27Z"/>
             </svg>
             <a
                 target="_blank"
-                href="https://maps.app.goo.gl/Sp27UbEHm7aRQjuL7"
-            >Route de la Galaise, 23a
-                <br>1228 Plan-Les-Ouates</a>
-        </div>
-
-        <div
-            class="v-footer-app__licence"
-        >
-            sous licence creative commons | CC•BY•SA
+                href="https://maps.app.goo.gl/unobwdcRPktAYrrj7"
+            >Rue Marguerite-Dellenbach, 5
+                <br>1205 Geneève</a>
         </div>
     </footer>
 </template>

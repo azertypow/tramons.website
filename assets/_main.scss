@@ -76,19 +76,9 @@ body {
   position: relative;
   width: 100%;
   min-height: 100%;
-  background:
-  linear-gradient(
-                  rgba(0, 0, 0, 0) calc((1.33 * 56.6mm) - 1px),
-                  rgba(192, 192, 192, 1) calc((1.33 * 56.6mm)),
-                  rgba(0, 0, 0, 0) calc((1.33 * 56.6mm) + 1px)
-  ),
-  linear-gradient(
-                  90deg,
-                  rgba(0, 0, 0, 0) calc((1.33 * 40mm) - 1px),
-                  rgba(192, 192, 192, 1) calc((1.33 * 40mm)),
-                  rgba(0, 0, 0, 0) calc((1.33 * 40mm) + 1px)
-  );
+  background: hsl(0, 0%, 10%);
   background-size: calc(1.33 * 40mm) calc(1.33 * 56.6mm);
+  color: white;
 }
 
 #__nuxt {
@@ -112,7 +102,7 @@ button {
   font-weight: 200;
   border: none;
   border-radius: 4px;
-  background: #2D3CE5 0% 0% no-repeat padding-box;
+  background: #814df5 0% 0% no-repeat padding-box;
   box-shadow: 40px 33px 26px #00000029;
   color: white;
 }

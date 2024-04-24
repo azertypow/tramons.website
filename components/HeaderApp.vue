@@ -1,7 +1,10 @@
 <template>
     <header class="v-header-app" >
         <div>
-            <div>facenord</div>
+            <div>Atelier Tramons</div>
+            <div>Espace dédié à l'imprimerie, Genève CH</div>
+            <div>☆ Impression ☆ Édition ☆ Formation ☆</div>
+            <div>| Riso 12 couleurs | Presse Typo | Offset |</div>
         </div>
     </header>
 </template>
