@@ -11,7 +11,7 @@
                 target="_blank"
                 href="https://maps.app.goo.gl/unobwdcRPktAYrrj7"
             >Rue Marguerite-Dellenbach, 5
-                <br>1205 Geneève</a>
+                <br>1205 Genève</a>
         </div>
     </footer>
 </template>
