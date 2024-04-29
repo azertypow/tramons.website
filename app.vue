@@ -742,7 +742,7 @@
                     <a
                         class="button"
                         target="_blank"
-                        href="mailto:atelier@tramons.ch?subject=contact depuis tramons.ch"
+                        href="mailto:atelier@tramons.ch?subject=contact%20depuis%20tramons.ch"
                     >atelier@tramons.ch</a>
                 </div>
             </div>
@@ -943,6 +943,7 @@ function onMouseLeaveCard(mouseEvent: MouseEvent, cardElement: HTMLElement) {
     perspective: 100vh;
     position: relative;
     transform: rotate(-10deg);
+    z-index: 0;
 
     @media (min-width: 1100px) {
         padding-top:        10vh;
@@ -1029,7 +1030,7 @@ function onMouseLeaveCard(mouseEvent: MouseEvent, cardElement: HTMLElement) {
   bottom: 0;
   left: 0;
   width: 100%;
-    z-index: 100;
+    z-index: 0;
     background: hsl(0, 0%, 10%);
     box-shadow: 0 -10px 10px rgba(0, 0, 0, .15);
 
