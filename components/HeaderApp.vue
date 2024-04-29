@@ -2,9 +2,9 @@
     <header class="v-header-app" >
         <div>
             <div>Atelier Tramons</div>
-            <div>Espace dédié à l'imprimerie, Genève CH</div>
-            <div>☆ Impression ☆ Édition ☆ Formation ☆</div>
-            <div>| Riso 12 couleurs | Presse Typo | Offset |</div>
+            <div>Espace associatif dédié à l’imprimé, Genève CH</div>
+            <div>𖥔 Impression 𖥔 Édition 𖥔 Formation 𖥔</div>
+            <div> |  Riso 12 couleurs | Presse Typo | Offset |</div>
         </div>
     </header>
 </template>
