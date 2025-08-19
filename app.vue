@@ -866,7 +866,7 @@ function onMouseLeaveCard(mouseEvent: MouseEvent, cardElement: HTMLElement) {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: linear-gradient(0deg, hsla(0, 0, 10%, 0) 0%, hsla(0, 0, 10%, 1) 75%);
+  background: linear-gradient(0deg, #1a1a1a00 0%, #1a1a1aFF 75%);
 }
 
 .v-app__content {
@@ -1030,7 +1030,7 @@ function onMouseLeaveCard(mouseEvent: MouseEvent, cardElement: HTMLElement) {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: linear-gradient(180deg, hsla(0, 0, 10%, 0) 0%, hsla(0, 0, 10%, 1) 75%);
+  background: linear-gradient(180deg, #1a1a1a00 0%, #1a1a1aff 75%);
 }
 
 </style>
