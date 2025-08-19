@@ -4,4 +4,9 @@ export default defineNuxtConfig({
   css: [
       '~/assets/_main.scss',
   ],
+  routeRules: {
+      '/appel-a-projets': {
+          redirect: { to: '/appel-a-projets.html', statusCode: 301 }
+      }
+  },
 })
