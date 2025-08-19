@@ -6,198 +6,180 @@
   <title>La Passerelle — Appel à projets | Atelier Tramons</title>
   <meta name="description" content="Appel à projets — Programme « La Passerelle » par l’Atelier Tramons, Genève." />
   <style>
-    :root{
-      --bg:#f3eee0;
-      --ink:#111111;
-      --ink-soft:#2a2a2a;
-      --rule:#00000022;
-      --sans: "Helvetica Neue", Helvetica, "Arial Black", Arial, sans-serif;
-      --serif: "Times New Roman", Times, serif;
-      --max: 1020px;
-    }
-
-    html,body{height:100%}
-    body{
-      margin:0;
-      background:var(--bg);
-      color:var(--ink);
-      font-family: var(--serif);
-      line-height:1.5;
-      text-rendering:optimizeLegibility;
-      -webkit-font-smoothing:antialiased;
-    }
-
-    /* Bandeaux fixes façon affiche */
-    .fixed-top, .fixed-bottom{
-      position:fixed; left:50%; transform:translateX(-50%);
-      letter-spacing:.06em;
-      color:var(--ink);
-      z-index:1000;
-      pointer-events:none;
-      white-space:nowrap;
-    }
-    .fixed-top{ top:20px; font-family: var(--serif); font-size:clamp(18px, 2.2vw, 28px); }
-    .fixed-bottom{ bottom:24px; font-family: var(--serif); font-size:clamp(18px, 2.2vw, 28px); }
-
-    /* Mise en page */
-    .wrap{ width:min(var(--max), 92vw); margin:0 auto 14rem auto; padding-top:8rem; }
-    .hero{ position:relative; margin:3rem auto 5rem auto; display:grid; place-items:center; isolation:isolate; }
-    .display{ font-family:var(--sans); font-weight:900; line-height:0.88; letter-spacing:-.02em; font-size:clamp(40px, 8vw, 96px); }
-
-    /* Sections */
-    section{ max-width:72ch; margin:0 auto; padding-block:2.25rem; border-top:1px dashed var(--ink); }
-    section:first-of-type{ border-top:0 }
-    h2{ font-family:var(--sans); font-weight:900; font-size:clamp(26px, 3.2vw, 40px); line-height:0.95; margin:0 0 .6rem 0; display:flex; align-items:center; gap:.75rem; }
-    h2 .num{ display:inline-grid; place-items:center; width:1.9em; height:1.9em; border-radius:50%; background:var(--ink); color:var(--bg); font-size:.55em; letter-spacing:.04em; flex:0 0 auto; }
-    p, li{ font-size:clamp(18px, 1.7vw, 21px); color:var(--ink-soft); }
-    ul{ padding-left:1.2rem; margin:.25rem 0 0 0 }
-    li{ margin:.35rem 0 }
-    .two-col{ column-gap:3.2rem; column-count:1; }
-    @media (min-width:980px){ .two-col{ column-count:2 } }
-
-    /* Liens noirs non soulignés */
-    a{ color:var(--ink); text-decoration:none; }
-    a:hover, a:focus{ text-decoration:none; opacity:.85; }
-
-    /* Appels à l'action */
-    .cta{ margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap; }
-    .btn{ font-family:var(--sans); font-weight:900; letter-spacing:.02em; text-decoration:none; color:var(--bg); background:var(--ink); padding:.85rem 1.15rem; border-radius:999px; border:1px solid #000; transition:transform .08s ease; }
-    .btn:hover{ transform:translateY(-1px) }
-    .note{ font-size:.95rem; opacity:.85; margin-top:.4rem; }
-
-    footer{ height:6rem }
-    em{ font-style:italic }
-    .brand-small{ text-transform:uppercase; letter-spacing:.08em }
+      :root{
+          --bg:#f3eee0;
+          --ink:#111111;
+          --ink-soft:#2a2a2a;
+          --rule:#00000022;
+          --sans: "Helvetica Neue", Helvetica, "Arial Black", Arial, sans-serif;
+          --serif: "Times New Roman", Times, serif;
+          --max: 1020px;
+      }
+      html,body{height:100%}
+      body{
+          margin:0;
+          background:var(--bg);
+          color:var(--ink);
+          font-family: var(--serif);
+          line-height:1.5;
+      }
+      .fixed-top, .fixed-bottom{
+          position:fixed; left:50%; transform:translateX(-50%);
+          letter-spacing:.06em; color:var(--ink);
+          z-index:1000; pointer-events:none; white-space:nowrap;
+      }
+      .fixed-top{ top:20px; font-family: var(--serif); font-size:clamp(18px, 2.2vw, 28px); }
+      .fixed-bottom{ bottom:24px; font-family: var(--serif); font-size:clamp(18px, 2.2vw, 28px); }
+      .wrap{ width:min(var(--max), 92vw); margin:0 auto 14rem auto; padding-top:8rem; }
+      .hero{
+          position:relative; margin:3rem auto 5rem auto; display:grid; place-items:center; isolation:isolate;
+          background:url('https://files.catbox.moe/onmtmc.svg') center/auto 100% no-repeat;
+      }
+      .display{ font-family:var(--sans); font-weight:900; line-height:0.88; letter-spacing:-.02em; font-size:clamp(40px, 8vw, 96px); position:relative; z-index:1; }
+      section{ max-width:72ch; margin:0 auto; padding-block:2.25rem; border-top:1px dashed var(--ink); }
+      section:first-of-type{ border-top:0 }
+      h2{ font-family:var(--sans); font-weight:900; font-size:clamp(26px, 3.2vw, 40px); line-height:0.95; margin:0 0 .6rem 0; display:flex; align-items:center; gap:.75rem; }
+      h2 .num{ display:inline-grid; place-items:center; width:1.9em; height:1.9em; border-radius:50%; background:var(--ink); color:var(--bg); font-size:.55em; letter-spacing:.04em; flex:0 0 auto; }
+      p, li{ font-size:clamp(18px, 1.7vw, 21px); color:var(--ink-soft); }
+      ul{ padding-left:1.2rem; margin:.25rem 0 0 0 }
+      li{ margin:.35rem 0 }
+      .two-col{ column-gap:3.2rem; column-count:1; }
+      @media (min-width:980px){ .two-col{ column-count:2 } }
+      a{ color:var(--ink); text-decoration:none; }
+      a:hover, a:focus{ opacity:.85; }
+      .cta{ margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap; }
+      .btn{ font-family:var(--sans); font-weight:900; letter-spacing:.02em; color:var(--bg); background:var(--ink); padding:.85rem 1.15rem; border-radius:999px; border:1px solid #000; transition:transform .08s ease; }
+      .btn:hover{ transform:translateY(-1px) }
+      .note{ font-size:.95rem; opacity:.85; margin-top:.4rem; }
+      footer{ height:6rem }
+      em{ font-style:italic }
+      .brand-small{ text-transform:uppercase; letter-spacing:.08em }
   </style>
 </head>
 <body>
-  <!-- Fixes, comme sur l’affiche -->
-  <div class="fixed-top">LA PASSERELLE</div>
-  <div class="fixed-bottom">ATELIER TRAMONS</div>
+<div class="fixed-top">LA PASSERELLE</div>
+<div class="fixed-bottom">ATELIER TRAMONS</div>
+<main class="wrap" aria-label="Appel à projets – La Passerelle">
+  <header class="hero">
+    <h1 class="display">Appel à projets</h1>
+  </header>
 
-  <main class="wrap" aria-label="Appel à projets – La Passerelle">
-    <!-- Héro minimal, sans image -->
-    <header class="hero">
-      <h1 class="display" aria-label="Appel à projets">Appel à projets</h1>
-    </header>
+  <!-- 1. CONTEXTE -->
+  <section id="contexte">
+    <h2><span class="num">1</span> Contexte</h2>
+    <p><em>La Passerelle</em> est un projet de recherche-création porté par l’Atelier Tramons qui vise à tisser un dialogue entre techniques d’impression traditionnelles (presse typographique, plomb, offset, riso, etc.) et pratiques artistiques/graphiques contemporaines. L’objectif est de valoriser un savoir-faire traditionnel tout en l’orientant vers des formes inédites et actuelles.</p>
+  </section>
 
-    <!-- 1. CONTEXTE -->
-    <section id="contexte">
-      <h2><span class="num">1</span> Contexte</h2>
-      <p><em>La Passerelle</em> est un projet de recherche-création porté par l’Atelier Tramons qui vise à tisser un dialogue entre techniques d’impression traditionnelles (presse typographique, plomb, offset, riso, etc.) et pratiques artistiques/ graphiques contemporaines. L’objectif est de valoriser un savoir-faire traditionnel tout en l’orientant vers des formes inédites et actuelles.</p>
-    </section>
+  <!-- 2. OBJECTIFS -->
+  <section id="objectifs">
+    <h2><span class="num">2</span> Objectifs</h2>
+    <ul>
+      <li>Favoriser le transfert intergénérationnel des connaissances entre artisan·e·x·s et artistes/designers.</li>
+      <li>Stimuler la créativité dans l’impression artisanale et aboutir à trois œuvres originales réalisées par trois artistes (arts visuels, graphisme, mode…) explorant des procédés d’impression hybrides.</li>
+      <li>Sensibiliser le public à ces pratiques grâce à une présentation publique sous forme de vernissage lors de la Nuit des Bains.</li>
+    </ul>
+  </section>
 
-    <!-- 2. OBJECTIFS -->
-    <section id="objectifs">
-      <h2><span class="num">2</span> Objectifs</h2>
-      <ul>
-        <li>Favoriser le transfert intergénérationnel des connaissances entre artisan·e·x·s et artistes/ designers.</li>
-        <li>Stimuler la créativité dans l’impression artisanale et aboutir à trois œuvres originales réalisées par trois artistes (arts visuels, graphisme, mode…) explorant des procédés d’impression hybrides.</li>
-        <li>Sensibiliser le public à ces pratiques grâce à une présentation publique sous forme de vernissage lors de la Nuit des Bains.</li>
-      </ul>
-    </section>
+  <!-- 3. DISPOSITIF -->
+  <section id="dispositif">
+    <h2><span class="num">3</span> Dispositif</h2>
+    <p><strong>Durée :</strong> 21 octobre 2025 → 9 décembre 2025 (production) → 22 janvier 2026 (restitution)</p>
+    <p><strong>Rythme :</strong> huit journées d’atelier structurées en cinq étapes : introduction ; conception ; réalisation ; critique collective ; vernissage lors de la Nuit des Bains.</p>
+    <p><strong>Participant·e·x·s :</strong><br>
+      – Trois artistes/graphistes (émergent·e·s ou confirmé·e·s)<br>
+      – Artisan·e·x·s spécialisé·e·x·s</p>
+    <p><strong>Encadrement :</strong> Atelier Tramons (Clovis Duran)</p>
+  </section>
 
-    <!-- 3. DISPOSITIF -->
-    <section id="dispositif">
-      <h2><span class="num">3</span> Dispositif</h2>
-      <div class="two-col">
-        <p><strong>Durée :</strong> 21 octobre 2025 → 9 décembre 2025 (production) → 22 janvier 2026 (restitution)</p>
-        <p><strong>Rythme :</strong> huit journées d’atelier structurées en cinq étapes : introduction ; conception ; réalisation ; critique collective ; vernissage lors de la Nuit des Bains.</p>
-        <p><strong>Participant·e·x·s :</strong><br>
-          – Trois artistes/ graphistes (émergent·e·s ou confirmé·e·s)<br>
-          – Artisan·e·x·s spécialisé·e·x·s</p>
-        <p><strong>Encadrement :</strong> Atelier Tramons (Clovis Duran)</p>
-      </div>
-    </section>
+  <!-- 4. PROFIL -->
+  <section id="profil">
+    <h2><span class="num">4</span> Profil recherché/critères de sélection</h2>
+    <p>Artistes ou designers (diplômé·e·x·s ou non) pratiquant l’image imprimée, la typographie, l’illustration ou les arts graphiques. Motivation à expérimenter des procédés analogiques et numériques, capacité à travailler en équipe, faisabilité du projet soumis dans le temps imparti.</p>
+    <p>La sélection des dossiers est assurée par deux membres du jury invitées — Julie Marmet et Katia Leonelli — ainsi que par l’Atelier Tramons, représenté par Clovis Duran.</p>
+    <p>Les critères de sélection incluent la pertinence de la proposition, la complémentarité des profils et le potentiel d’expérimentation.</p>
+  </section>
 
-    <!-- 4. PROFIL -->
-    <section id="profil">
-      <h2><span class="num">4</span> Profil recherché / critères de sélection</h2>
-      <p>Artistes ou designers (diplômé·e·x·s ou non) pratiquant l’image imprimée, la typographie, l’illustration ou les arts graphiques. Motivation à expérimenter des procédés analogiques et numériques, capacité à travailler en équipe, faisabilité du projet soumis dans le temps imparti.</p>
-      <p>La sélection des dossiers est assurée par deux membres du jury invitées — Julie Marmet et Katia Leonelli — ainsi que par l’Atelier Tramons, représenté par Clovis Duran.</p>
-      <p>Les critères de sélection incluent la pertinence de la proposition, la complémentarité des profils et le potentiel d’expérimentation.</p>
-    </section>
+  <!-- 5. CONDITIONS -->
+  <section id="conditions">
+    <h2><span class="num">5</span> Conditions proposées aux participant·e·x·s</h2>
+    <ul>
+      <li>Spécialistes capables de mettre en œuvre la platine Heidelberg, l’offset Rotaprint R40, la Riso MH9350 (treize couleurs), l’imprimante 3D Bambu Lab X1-Carbon et les divers outils de l’atelier pour soutenir vos recherches.</li>
+      <li>Matériel nécessaire à la production et à la recherche inclus.</li>
+      <li>Accompagnement technique et artistique.</li>
+      <li>50&nbsp;% du tirage final (le nombre d’exemplaires sera déterminé en fonction de la nature du projet).</li>
+      <li>Vernissage durant la Nuit des Bains.</li>
+      <li>Publication d’une brochure sur les recherches effectuées.</li>
+      <li>Cachet de résidence de 900 francs.</li>
+    </ul>
+  </section>
 
-    <!-- 5. CONDITIONS -->
-    <section id="conditions">
-      <h2><span class="num">5</span> Conditions proposées aux participant·e·x·s</h2>
-      <ul>
-        <li>Spécialistes capables de mettre en œuvre la platine Heidelberg, l’offset Rotaprint R40, la Riso MH9350 (treize couleurs), l’imprimante 3D Bambu Lab X1-Carbon et les divers outils de l’atelier pour soutenir vos recherches.</li>
-        <li>Matériel nécessaire à la production et à la recherche inclus.</li>
-        <li>Accompagnement technique et artistique.</li>
-        <li>50&nbsp;% du tirage final (le nombre d’exemplaires sera déterminé en fonction de la nature du projet).</li>
-        <li>Vernissage durant la Nuit des Bains.</li>
-        <li>Publication d’une brochure sur les recherches effectuées.</li>
-        <li>Cachet de résidence de 900 francs.</li>
-      </ul>
-    </section>
+  <!-- 6. ENGAGEMENTS -->
+  <section id="engagements">
+    <h2><span class="num">6</span> Engagements des artistes sélectionné·e·x·s</h2>
+    <ul>
+      <li>Présence aux huit séances.</li>
+      <li>Réalisation d’une œuvre originale.</li>
+      <li>Participation à la présentation publique lors de la Nuit des Bains.</li>
+      <li>Contribution à la documentation du processus.</li>
+    </ul>
+  </section>
 
-    <!-- 6. ENGAGEMENTS -->
-    <section id="engagements">
-      <h2><span class="num">6</span> Engagements des artistes sélectionné·e·x·s</h2>
-      <ul>
-        <li>Présence aux huit séances.</li>
-        <li>Réalisation d’une œuvre originale.</li>
-        <li>Participation à la présentation publique lors de la Nuit des Bains.</li>
-        <li>Contribution à la documentation du processus.</li>
-      </ul>
-    </section>
+  <!-- 7. DOSSIER -->
+  <section id="dossier">
+    <h2><span class="num">7</span> Dossier de candidature</h2>
+    <ul>
+      <li>Portfolio présentant les travaux jugés pertinents (PDF unique ≤ 30&nbsp;Mo).</li>
+      <li>Note d’intention (environ une page) décrivant le projet que vous souhaitez développer à l’atelier.</li>
+      <li>CV et coordonnées complètes.</li>
+    </ul>
+  </section>
 
-    <!-- 7. DOSSIER -->
-    <section id="dossier">
-      <h2><span class="num">7</span> Dossier de candidature</h2>
-      <ul>
-        <li>Portfolio présentant les travaux jugés pertinents (PDF unique ≤ 30&nbsp;Mo).</li>
-        <li>Note d’intention (environ une page) décrivant le projet que vous souhaitez développer à l’atelier.</li>
-        <li>CV et coordonnées complètes.</li>
-      </ul>
-    </section>
+  <!-- 8. CALENDRIER -->
+  <section id="calendrier">
+    <h2><span class="num">8</span> Calendrier</h2>
 
-    <!-- 8. CALENDRIER -->
-    <section id="calendrier">
-      <h2><span class="num">8</span> Calendrier</h2>
-      <div class="num">
-        <p><strong>Lancement de l’appel :</strong> 12 août 2025<br>
-           <strong>Date limite de dépôt :</strong> 26 septembre 2025<br>
-           <strong>Annonce des résultats :</strong> 3 octobre 2025<br>
-           <strong>Début du programme :</strong> 21 octobre 2025<br>
-           <strong>Fin du programme :</strong> 9 décembre 2025<br>
-           <strong>Présentation publique :</strong> 22 janvier 2026
-        </p>
-        <p><strong>Séances :</strong><br>
-          Mardi 21 octobre 2025<br>
-          Mardi 28 octobre 2025<br>
-          Mardi 4 novembre 2025<br>
-          Mardi 11 novembre 2025<br>
-          Mardi 18 novembre 2025<br>
-          Mardi 25 novembre 2025<br>
-          Mardi 2 décembre 2025<br>
-          Mardi 9 décembre 2025<br>
-          Jeudi 22 janvier 2026 — présentation publique lors de la Nuit des Bains
-        </p>
-      </div>
-    </section>
+    <p><strong>Lancement de l’appel :</strong> 12 août 2025<br>
+      <strong>Date limite de dépôt :</strong> 26 septembre 2025<br>
+      <strong>Annonce des résultats :</strong> 3 octobre 2025<br>
+      <strong>Début du programme :</strong> 21 octobre 2025<br>
+      <strong>Fin du programme :</strong> 9 décembre 2025<br>
+      <strong>Présentation publique :</strong> 22 janvier 2026
+    </p>
+    <p><strong>Séances :</strong><br>
+      Mardi 21 octobre 2025<br>
+      Mardi 28 octobre 2025<br>
+      Mardi 4 novembre 2025<br>
+      Mardi 11 novembre 2025<br>
+      Mardi 18 novembre 2025<br>
+      Mardi 25 novembre 2025<br>
+      Mardi 2 décembre 2025<br>
+      Mardi 9 décembre 2025<br>
+      Jeudi 22 janvier 2026 — présentation publique lors de la Nuit des Bains
+    </p>
 
-    <!-- 9. ENVOI -->
-    <section id="envoi">
-      <h2><span class="num">9</span> Modalités d’envoi</h2>
-      <p>Envoyez votre dossier à <a href="mailto:atelier@tramons.ch">atelier@tramons.ch</a><br>
+  </section>
+
+  <!-- 9. ENVOI -->
+  <section id="envoi">
+    <h2><span class="num">9</span> Modalités d’envoi</h2>
+    <p>Envoyez votre dossier à <a href="mailto:atelier@tramons.ch">atelier@tramons.ch</a><br>
       <span class="note">Objet&nbsp;: <em>Candidature La Passerelle – [Nom Prénom]</em></span></p>
-      <div class="cta" role="group" aria-label="Actions">
-        <a class="btn" href="mailto:atelier@tramons.ch?subject=Candidature%20La%20Passerelle&body=Bonjour%2C%0A%0AVeuillez%20trouver%20ci-joint%20mon%20dossier%20de%20candidature.%0A%0ACordialement%2C%0A">Envoyer ma candidature</a>
-        <a class="btn" href="#calendrier">Voir les dates</a>
-      </div>
-    </section>
+    <div class="cta" role="group" aria-label="Actions">
+      <a class="btn" href="mailto:atelier@tramons.ch?subject=Candidature%20La%20Passerelle&body=Bonjour%2C%0A%0AVeuillez%20trouver%20ci-joint%20mon%20dossier%20de%20candidature.%0A%0ACordialement%2C%0A">Envoyer ma candidature</a>
+      <a class="btn" href="#calendrier">Voir les dates</a>
+    </div>
+  </section>
 
-    <!-- 10. CONTACTS -->
-    <section id="contacts">
-      <h2><span class="num">10</span> Contacts</h2>
-      <p><strong>Atelier Tramons</strong> — Rue Marguerite-Dellenbach&nbsp;5, 1205 Genève<br>
-      Tél. +41&nbsp;22&nbsp;556&nbsp;36&nbsp;16 | <a href="https://www.tramons.ch" target="_blank" rel="noopener">www.tramons.ch</a></p>
-      <p class="note">Programme rendu possible grâce au soutien de la Ville de Genève et son programme G’innove.</p>
-    </section>
+  <!-- 10. CONTACTS -->
+  <section id="contacts">
+    <h2><span class="num">10</span> Contacts</h2>
+    <p><strong>Atelier Tramons</strong> — Rue Marguerite-Dellenbach&nbsp;5, 1205 Genève<br>
+      Tél. +41&nbsp;22&nbsp;556&nbsp;36&nbsp;16 | <a href="https://tramons.ch/" target="_blank" rel="noopener">www.tramons.ch</a></p>
+    <p class="note">Programme rendu possible grâce au soutien de la Ville de Genève et de son programme G’innove.</p>
+  </section>
 
-    <footer aria-hidden="true"></footer>
-  </main>
+  <footer aria-hidden="true"></footer>
+
+</main>
 </body>
 </html>
