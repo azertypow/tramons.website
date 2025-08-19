@@ -865,7 +865,8 @@ function onMouseLeaveCard(mouseEvent: MouseEvent, cardElement: HTMLElement) {
   top: 0;
   left: 0;
   width: 100%;
-    z-index: 1000;
+  z-index: 1000;
+  background: linear-gradient(0deg, hsla(0, 0, 10%, 0) 0%, hsla(0, 0, 10%, 1) 75%);
 }
 
 .v-app__content {
@@ -879,23 +880,29 @@ function onMouseLeaveCard(mouseEvent: MouseEvent, cardElement: HTMLElement) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     overflow: auto;
+
+    @media (min-height: 750px) {
+        justify-content: center;
+    }
 }
 
 .v-app__content__page {
     width: 100%;
-    min-height: 100%;
     box-sizing: content-box;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    @media (min-height: 750px) {
+        min-height: 100%;
+        justify-content: center;
+    }
 
     &:before {
         content: "";
         display: block;
-        height: 3rem;
+        height: 9rem;
         width: 100%;
 
         @media (min-width: 900px) {
@@ -906,16 +913,8 @@ function onMouseLeaveCard(mouseEvent: MouseEvent, cardElement: HTMLElement) {
     &:after {
         content: "";
         display: block;
-        height: 10rem;
+        height: 5rem;
         width: 100%;
-
-        @media (min-height: 660px) {
-            height: 3rem;
-        }
-
-        @media (min-width: 900px) {
-            height: 5rem;
-        }
     }
 }
 
@@ -1030,14 +1029,8 @@ function onMouseLeaveCard(mouseEvent: MouseEvent, cardElement: HTMLElement) {
   bottom: 0;
   left: 0;
   width: 100%;
-    z-index: 0;
-    background: hsl(0, 0%, 10%);
-    box-shadow: 0 -10px 10px rgba(0, 0, 0, .15);
-
-    @media (min-height: 660px) {
-        background: transparent;
-        box-shadow: none;
-    }
+  z-index: 1000;
+  background: linear-gradient(180deg, hsla(0, 0, 10%, 0) 0%, hsla(0, 0, 10%, 1) 75%);
 }
 
 </style>
